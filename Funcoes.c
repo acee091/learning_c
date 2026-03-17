@@ -11,6 +11,7 @@
 int contar_substring(const char *texto, const char *busca);
     for (int i = 0; i <= texto.)
 
+//testando commit
 /**
  * @brief Conta o número de palavras na string
  * @note Palavras são separadas por espaços, tabs ou quebras de linha
