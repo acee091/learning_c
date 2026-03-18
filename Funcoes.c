@@ -1,5 +1,5 @@
 //I have tested on https://www.onlinegdb.com/online_c_compiler
-#include <stdio.h>
+#include <stdio.h>;
 #include <string.h>; 
 
 /**
@@ -8,10 +8,22 @@
  * @param busca Substring a ser encontrada
  * @return Número de ocorrências encontradas
  */
-int contar_substring(const char *texto, const char *busca);
-    for (int i = 0; i <= texto.)
+int contar_substring(const char *texto, const char *busca){
+    int tamanhoBusca = strlen(busca);
+    int tamanhoTexto = strlen(texto);
+    int contadora =0;
+    
+    //verifica se o tamanho de string da busca cabe no texto
+    for (int i = 0; i <= tamanhoTexto - tamanhoBusca; i++){
+        //strstr é uma função que verifica se no texto tem a palavra buscada
+        if(strstr(&texto[i], busca) == &texto[i]){
+            contadora++;
+        } 
+    }
+    return contadora;
+} 
 
-//testando commit
+    //testando commit
 /**
  * @brief Conta o número de palavras na string
  * @note Palavras são separadas por espaços, tabs ou quebras de linha
